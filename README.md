@@ -18,5 +18,5 @@ This project is a React application that manages a task list using Redux for sta
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/hamiltondarryl/task-app.git
+   cd task-app
