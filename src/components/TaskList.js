@@ -38,20 +38,23 @@ const TaskList = () => {
 
   return (
     <div>
-      <h1>Task List</h1>
-      <input
-        type="text"
-        value={newTaskTitle}
-        onChange={(e) => setNewTaskTitle(e.target.value)}
-        placeholder="New task"
-      />
-      <button onClick={handleAddTask}>Add Task</button>
+      <h1>Liste des taches</h1>
+      <div className='flex'>
+        <input
+          type="text"
+          value={newTaskTitle}
+          onChange={(e) => setNewTaskTitle(e.target.value)}
+          placeholder="Nouvelle tache" className='form-control'
+        />
+      <button className='btn btn-primary' onClick={handleAddTask}>Ajouter</button>
+      </div>
+     
       <ul>
         {sortedTasks.map((task) => (
           <li key={task.id}>
             {task.title} - {task.completed ? 'Completed' : 'Pending'}
-            <button onClick={() => setSelectedTask(task)}>Update</button>
-            <button onClick={() => handleRemoveTask(task.id)}>Remove</button>
+            <button className='btn btn-update' onClick={() => setSelectedTask(task)}>Modifier</button>
+            <button className='btn btn-remove' onClick={() => handleRemoveTask(task.id)}>Supprimer</button>
           </li>
         ))}
       </ul>

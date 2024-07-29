@@ -1,4 +1,16 @@
 
+body {
+	background-color: #28223F;
+	font-family: Montserrat, sans-serif;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	min-height: 100vh;
+	margin: 0;
+}
 
 .ReactModal__Overlay {
   background-color: rgba(0, 0, 0, 0.75)!important;
@@ -18,4 +30,69 @@
   outline: none!important;
   max-width: 600px!important;
   width: 100%!important;
+}
+
+h1{
+  color: #fff;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.flex{
+  display: flex;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.btn-update {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  margin-left: 10px;
+}
+
+.btn-remove {
+  color: #fff;
+  border: 1px solid #6c757d!important;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+li{
+  color: #fff;
+  margin-bottom: 10px;
 }
