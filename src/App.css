@@ -65,6 +65,7 @@ h1{
   background-color: #6c757d;
   border-color: #6c757d;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .btn-remove {
@@ -95,4 +96,7 @@ h1{
 li{
   color: #fff;
   margin-bottom: 10px;
+}
+.my-2{
+  margin-top: 10px;
 }

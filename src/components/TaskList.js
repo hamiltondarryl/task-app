@@ -48,11 +48,10 @@ const TaskList = () => {
         />
       <button className='btn btn-primary' onClick={handleAddTask}>Ajouter</button>
       </div>
-     
       <ul>
         {sortedTasks.map((task) => (
           <li key={task.id}>
-            {task.title} - {task.completed ? 'Completed' : 'Pending'}
+            {task.title} - <i>{task.completed ? 'Completed' : 'Pending'}</i> 
             <button className='btn btn-update' onClick={() => setSelectedTask(task)}>Modifier</button>
             <button className='btn btn-remove' onClick={() => handleRemoveTask(task.id)}>Supprimer</button>
           </li>

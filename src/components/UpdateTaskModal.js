@@ -16,30 +16,30 @@ const UpdateTaskModal = ({ isOpen, onRequestClose, task, onUpdateTask }) => {
 
   return (
     <Modal isOpen={isOpen} onRequestClose={onRequestClose}>
-      <h2>Update Task</h2>
+      <h2>Mettre à jour une tache</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>
-            Title:
+          <label > Titre :</label>
             <input
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
+              className='form-control my-2'
             />
-          </label>
         </div>
         <div>
-          <label>
-            Completed:
+          <label> Compléte:</label>
             <input
               type="checkbox"
               checked={completed}
               onChange={(e) => setCompleted(e.target.checked)}
+              className='my-2'
             />
-          </label>
         </div>
-        <button type="submit">Update</button>
-        <button type="button" onClick={onRequestClose}>Cancel</button>
+        <div  className='my-2'>
+          <button type="submit" className='btn btn-update'>Mettre à jour</button>
+          <button type="button" className='btn btn-primary' onClick={onRequestClose}>Annuler</button>
+        </div>
       </form>
     </Modal>
   );
